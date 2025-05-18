@@ -40,6 +40,5 @@ async def main(llm, model_name, promt):
     await browser.close()
 
 if __name__ == '__main__':
-    # asyncio.run(main(llm_4o_mini, "gpt-4o-mini", SORT_PROMT))
-    asyncio.run(main(llm_4o_mini, "gpt-4o", REGISTER_PROMPT))
-    asyncio.run(main(llm_4o_mini, "gpt-4o", REGISTER_PROMPT))
+    asyncio.run(main(llm_4o, "gpt-4o", REGISTER_PROMPT))
+    asyncio.run(main(llm_4o, "gpt-4o", TRANSACTION_PROMPT))
